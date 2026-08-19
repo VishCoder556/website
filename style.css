@@ -48,8 +48,6 @@ body {
   font-weight: 200;
   font-size: 30px;
   
-  float: right;
-
   margin-right: 60px;
 }
 
@@ -100,4 +98,8 @@ a {
 .project_youtube{
     font-size:25px;
     display: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
