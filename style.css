@@ -81,10 +81,14 @@ div.project {
     padding-top: 10px;
     width: 60%;
   margin-bottom: 50px;
+
+  hyphens: auto;
 }
 div.project:hover {
     transform: scale(1.1);
     margin-left: 50px;
+}
+div.project > a{
 }
 a {
     color: blue;

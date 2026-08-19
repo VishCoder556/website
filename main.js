@@ -11,9 +11,10 @@ Array.from(projects).forEach((elem) => {
         programming_languages = document.getElementById("programming_languages")
         if (selected == 0){
             elem.style.transform = "scale(2.0)"
-            elem.style.marginLeft = "21%";
-            elem.style.marginBottom = "100px";
-            elem.style.marginTop = "70px";
+            elem.style.width = "51%";
+            elem.style.marginLeft = elem.getBoundingClientRect().width * 0.4 + "px";
+            elem.style.marginBottom = elem.getBoundingClientRect().height + "px";
+            elem.style.marginTop = elem.getBoundingClientRect().height + "px";
             if (youtube_link){
                 youtube_link.style.display = "inline";
             }
@@ -25,6 +26,7 @@ Array.from(projects).forEach((elem) => {
             }
             elem.classList.add("selected");
         }else if (selected == 1){
+            elem.style.width = "60%";
             elem.style.transform = "scale(1.0)"
             elem.style.marginLeft = "0%";
             elem.style.marginBottom = "50px";
