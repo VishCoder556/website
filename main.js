@@ -11,7 +11,7 @@ Array.from(projects).forEach((elem) => {
         programming_languages = document.getElementById("programming_languages")
         if (selected == 0){
             elem.style.transform = "scale(2.0)"
-            elem.style.marginLeft = "400px";
+            elem.style.marginLeft = "21%";
             elem.style.marginBottom = "100px";
             elem.style.marginTop = "70px";
             if (youtube_link){
@@ -26,7 +26,7 @@ Array.from(projects).forEach((elem) => {
             elem.classList.add("selected");
         }else if (selected == 1){
             elem.style.transform = "scale(1.0)"
-            elem.style.marginLeft = "0px";
+            elem.style.marginLeft = "0%";
             elem.style.marginBottom = "50px";
             elem.style.marginTop = "0px";
             programming_languages.style.marginTop = "0px";
