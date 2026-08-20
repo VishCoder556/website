@@ -106,3 +106,7 @@ a {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+body {
+    margin: 20px;
+}
