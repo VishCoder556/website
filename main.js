@@ -11,7 +11,7 @@ Array.from(projects).forEach((elem) => {
         programming_languages = document.getElementById("programming_languages")
         if (selected == 0){
             elem.style.transform = "scale(2.0)"
-            elem.style.width = "51%";
+            elem.style.width = "49%";
             elem.style.marginLeft = elem.getBoundingClientRect().width * 0.4 + "px";
             elem.style.marginBottom = elem.getBoundingClientRect().height + "px";
             elem.style.marginTop = elem.getBoundingClientRect().height + "px";
