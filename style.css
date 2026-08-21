@@ -107,6 +107,10 @@ a {
   box-sizing: border-box;
 }
 
+#accounts {
+    font-size: 30px;
+}
+
 body {
     margin: 20px;
 }
