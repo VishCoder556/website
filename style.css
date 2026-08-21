@@ -80,15 +80,15 @@ div.project {
     padding-bottom: 10px;
     padding-top: 10px;
     width: 60%;
-  margin-bottom: 50px;
-
-  hyphens: auto;
+    margin-bottom: 50px;
 }
 div.project:hover {
     transform: scale(1.1);
     margin-left: 50px;
 }
 div.project > a{
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 a {
     color: blue;
