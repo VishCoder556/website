@@ -39,3 +39,49 @@ Array.from(projects).forEach((elem) => {
         }
     })
 })
+
+
+technologies = document.getElementsByClassName("scroll_animate")
+
+
+/* setTimeout(()=>{
+Array.from(technologies).forEach((elem, count) => {
+    setTimeout(() => {
+        elem.style.opacity = 1;
+        elem.style.bottom = "0px";
+        console.log(elem);
+    }, count * 100);
+});
+}, 100) */
+
+
+
+const observer = new IntersectionObserver((entries, observer)=>{
+    const view_entries = entries.filter(entry => entry.isIntersecting);
+
+  view_entries.forEach((entry, idx) => {
+    const elem = entry.target
+
+    let time = 0
+
+    if (elem.classList.contains("img")){
+        time = 100;
+    }else {
+        time = 200;
+    }
+
+    setTimeout(() => {
+        elem.style.opacity = 1;
+        elem.style.bottom = "0px";
+    }, idx*time);
+
+
+    observer.unobserve(elem);
+  });
+
+}, {
+    "threshold": 0.2
+});
+Array.from(technologies).forEach((icon, idx) => {
+    observer.observe(icon)
+});
