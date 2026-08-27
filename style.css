@@ -92,8 +92,8 @@ ul {
 }
 
 #bio {
-    color: black;
-    background: #73b4ba;
+    color: white;
+    text-align: center;
 
     padding-left: 10px;
     padding-right: 10px;
@@ -145,6 +145,7 @@ div.project:hover {
     flex-wrap: wrap;
     align-items: stretch;
     gap: 20px;
+    justify-content: center;
 }
 
 ._project{
@@ -166,10 +167,12 @@ div.project:hover {
 }
 ._project > img {
     width: 100%;
-    height: auto;
+    height: 250px;
     display: flex;
-    justify-content: center;
-    object-fit: cover;
+justify-content: flex-start; /* Aligns horizontally to the left */
+    align-items: flex-start;     /* Aligns vertically to the top */
+    object-fit: cover; /* Zooms in and crops to fill the container without distortion */
+object-position: top left;
 }
 ._project_socials{
     font-size:25px;
