@@ -25,20 +25,22 @@
 }
 
 body {
+    margin: 20px;
     background: black;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
 }
 
 .img > img {
     max-width: 100%;
   max-height: 100%;
     overflow: hidden;
-user-select: none;
-  -webkit-user-drag: none;
-  pointer-events: none;
 }
 
 .img {
-    background-color: white;
     border-radius: 30px;
     width: 160px;
     height: 150px;
@@ -46,14 +48,27 @@ user-select: none;
     justify-content: center;
     align-items: center;
     margin-right: 50px;
-  margin-bottom: 20px;
   overflow: hidden;
+
+    user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+
+br img {
+    user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 .scroll_animate {
   opacity: 0;
   position: relative;
-  bottom: 40px;
+}
+
+.scroll_down {
+  top: 40px;
 }
 
 .img:hover{
@@ -71,9 +86,9 @@ user-select: none;
 
 ul {
     list-style-type: none;
-  display: flex;
+    display: flex;
     flex-wrap: wrap;
-  gap: 16px;
+    gap: 16px;
 }
 
 #bio {
@@ -101,13 +116,6 @@ ul {
 
 }
 
-body{
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: white;
-}
-
 div.identifier {
     ;
 }
@@ -123,13 +131,54 @@ div.project {
     padding-right: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
-    width: 60%;
+    width: 40%;
     margin-bottom: 50px;
 }
 div.project:hover {
     transform: scale(1.1);
     margin-left: 50px;
 }
+
+._projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 20px;
+}
+
+._project{
+    width: 100%;
+    border-radius: 30px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+    font-size: 30px;
+    background: linear-gradient(to bottom, white, #4a2563);
+    flex: 0 1 400px;
+}
+
+._project:hover{
+    transform: scale(1.1);
+}
+._project > img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+._project_socials{
+    font-size:25px;
+    align-self: flex-end;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+}
+
 div.project > a{
     overflow-wrap: break-word;
     word-break: normal;
@@ -144,7 +193,11 @@ a {
 }
 .project_youtube{
     font-size:25px;
-    display: none;
+    float: right;
+}
+
+.fa-youtube-play{
+    color: red;
 }
 
 *, *::before, *::after {
@@ -153,8 +206,4 @@ a {
 
 #accounts {
     font-size: 30px;
-}
-
-body {
-    margin: 20px;
 }

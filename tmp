@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>April Fools!</title>
+</head>
+<body>
+	<TAG length=90>Hello World</TAG>
+	<script>
+        const tag = require('Tag');
+        tag.createTag("TAG", (tag)=>{
+            tag.elem.innerHTML = "We are updating the text with a length of "+tag.props.length;
+        });
+    </script>
+</body>
+</html>
